@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>TL FOOD</title>
+    <!-- Styles-->
+    <link href="./assets/css/styles.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <div class="container">
+          <div class="header">
+            <div class="logo"><a href="index.html"><img src="./assets/images/header/logo.png" alt=""></a></div>
+            <div class="header_center">
+              <div class="header_login">
+                <div class="login"><a href="information-member.html">Đăng nhập</a></div>
+                <ul class="language">
+                  <li><a>VN<span class="fal fa-chevron-down"></span></a>
+                    <ul class="Language-hide">
+                      <li><a href="">EN</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="header_search">
+                <form action="">
+                  <input type="text" placeholder="Tôi muốn tìm sản phẩm...">
+                  <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+              </div>
+              <div class="header_bars"><span class="fal fa-bars"></span></div>
+            </div>
+            <div class="header_option"><a class="option" href="">
+                <div class="img"><img src="./assets/images/header/menu-1.png" alt=""></div>
+                <p>Hotline 0901 234 567</p></a><a class="option" href="">
+                <div class="img"><img src="./assets/images/header/menu-2.png" alt=""></div>
+                <p>Nguồn gốc rõ ràng</p></a><a class="option" href="">
+                <div class="img"><img src="./assets/images/header/menu-3.png" alt=""></div>
+                <p>Giao hàng tận nơi</p></a><a class="option" href="">
+                <div class="img"><img src="./assets/images/header/menu-4.png" alt=""></div>
+                <p>100% Tươi sạch</p></a><a class="option addtocart">
+                <div class="img"><img src="./assets/images/header/menu-5.png" alt=""></div>
+                <p>Giỏ hàng<span class="cart">5</span></p></a>
+              <div class="drop-menu">
+                <div class="total">
+                  <p>Tổng cộng: 200.000 đ</p>
+                </div>
+                <div class="body">
+                  <div class="product">
+                    <div class="img"><img src="././assets/images/s-3/1.png" alt=""></div>
+                    <div class="content">
+                      <div class="name">Chuối vàng</div>
+                      <div class="box_price">
+                        <div class="number">1x</div>
+                        <div class="price">100.000 đ</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product">
+                    <div class="img"><img src="././assets/images/s-3/1.png" alt=""></div>
+                    <div class="content">
+                      <div class="name">Chuối vàng</div>
+                      <div class="box_price">
+                        <div class="number">1x</div>
+                        <div class="price">100.000 đ</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pay"><a class="btn-pay" href="cart.html">Tiến hành thanh toán<i class="fal fa-arrow-right"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav>
+          <div class="container">
+            <ul class="menu">
+              <li class="menu-list active"><a class="menu-list-a" href="index.html">Trang chủ</a></li>
+              <li class="menu-list"><a class="menu-list-a" href="about.html">Giới thiệu</a></li>
+              <li class="menu-list"><a class="menu-list-a" href="product-overview.html">Sản phẩm</a>
+                <ul class="mega-menu">
+                  <li>
+                    <div class="img"><img src="./assets/images/header/mega-1.png" alt=""></div><a class="title_mega" href="">Trái cây</a>
+                    <ul class="mega-list">
+                      <li><a href="">Trái cây nhập khẩu</a></li>
+                      <li><a href="">Trái cây nhập khẩu</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="img"><img src="./assets/images/header/mega-2.png" alt=""></div><a class="title_mega" href="">Rau củ quả</a>
+                    <ul class="block_collapse">
+                      <li><a class="collapse" href="">Sản phẩm</a>
+                        <ul class="collapse-inner">
+                          <li><a href="">Rau củ quả hàng ngày</a></li>
+                          <li><a href="">Rau củ quả hàng ngày</a></li>
+                        </ul>
+                      </li>
+                      <li><a class="collapse">Nội địa</a>
+                        <ul class="collapse-inner">
+                          <li><a href="">Rau củ quả hàng ngày</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="img"><img src="./assets/images/header/mega-3.png" alt=""></div><a class="title_mega" href="">Nước ép trái cây</a>
+                    <ul class="mega-list">
+                      <li><a href="">Trái cây nhập khẩu</a></li>
+                      <li><a href="">Trái cây nhập khẩu</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-list"><a class="menu-list-a" href="product-promotion.html">Khuyến mãi</a></li>
+              <li class="menu-list"><a class="menu-list-a" href="support-client.html">Hỗ trợ khách hàng</a></li>
+              <li class="menu-list"><a class="menu-list-a" href="news-list.html">Tin tức</a>
+                <ul class="mega-menu">
+                  <li>
+                    <ul class="mega-list">
+                      <li><a class="title_mega" href="">Tin tức - Sự kiện</a></li>
+                      <li><a class="title_mega" href="">Tin tức khuyến mãi</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-list"><a class="menu-list-a" href="contact.html">Liên hệ</a></li>
+              <li class="menu-list"><a class="menu-list-a" href="store-product.html">Cửa hàng</a></li>
+            </ul>
+            <div class="header_option-mobile"><a class="option" href="">
+                <div class="img"><img src="./assets/images/header/menu-1.png" alt=""></div>
+                <p>Hotline 0901 234 567</p></a><a class="option" href="">
+                <div class="img"><img src="./assets/images/header/menu-2.png" alt=""></div>
+                <p>Nguồn gốc rõ ràng</p></a><a class="option" href="">
+                <div class="img"><img src="./assets/images/header/menu-3.png" alt=""></div>
+                <p>Giao hàng tận nơi</p></a><a class="option" href="">
+                <div class="img"><img src="./assets/images/header/menu-4.png" alt=""></div>
+                <p>100% Tươi sạch</p></a><a class="option" href="">
+                <div class="img"><img src="./assets/images/header/menu-5.png" alt=""></div>
+                <p>100% Tươi sạch</p></a></div>
+          </div>
+        </nav>
+        <div class="menu_mobile"><em class="header_bars fal fa-times"></em>
+          <div class="container">
+            <div class="block_menu">
+              <ul>
+                <li><a href="about.html">Trang chủ</a></li>
+                <li><a href="about.html">Giới thiệu</a></li>
+                <li><a href="product-overview.html">Sản phẩm</a><i class="fa fa-chevron-down menu-dropdown"></i>
+                  <ul class="dropdown-inner">
+                    <li class="li-dropdown"><a href="">Trái cây</a><i class="fa fa-chevron-down menu-dropdown"></i>
+                      <div class="dropdown-inner">
+                        <ul class="mega_mega-list">
+                          <li class="li_mega_mega-list"><a class="collapse">Nội địa<i class="fa fa-chevron-down"></i></a>
+                            <ul class="collapse-inner">
+                              <li><a href="">Rau củ quả hàng ngày</a></li>
+                            </ul>
+                          </li>
+                          <li class="li_mega_mega-list"><a class="collapse">Nội địa<i class="fa fa-chevron-down"></i></a>
+                            <ul class="collapse-inner">
+                              <li><a href="">Rau củ quả hàng ngày</a></li>
+                            </ul>
+                          </li>
+                          <li class="li_mega_mega-list"><a class="collapse">Nội địa<i class="fa fa-chevron-down"></i></a>
+                            <ul class="collapse-inner">
+                              <li><a href="">Rau củ quả hàng ngày</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="li-dropdown"><a href="">Trái cây</a><i class="fa fa-chevron-down menu-dropdown"></i>
+                      <div class="dropdown-inner">
+                        <ul class="mega_mega-list">
+                          <li class="li_mega_mega-list"><a class="collapse">Nội địa<i class="fa fa-chevron-down"></i></a>
+                            <ul class="collapse-inner">
+                              <li><a href="">Rau củ quả hàng ngày</a></li>
+                            </ul>
+                          </li>
+                          <li class="li_mega_mega-list"><a class="collapse">Nội địa<i class="fa fa-chevron-down"></i></a>
+                            <ul class="collapse-inner">
+                              <li><a href="">Rau củ quả hàng ngày</a></li>
+                            </ul>
+                          </li>
+                          <li class="li_mega_mega-list"><a class="collapse">Nội địa<i class="fa fa-chevron-down"></i></a>
+                            <ul class="collapse-inner">
+                              <li><a href="">Rau củ quả hàng ngày</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="li-dropdown"><a href="">Trái cây</a><i class="fa fa-chevron-down menu-dropdown"></i>
+                      <div class="dropdown-inner">
+                        <ul class="mega_mega-list">
+                          <li class="li_mega_mega-list"><a class="collapse">Nội địa<i class="fa fa-chevron-down"></i></a>
+                            <ul class="collapse-inner">
+                              <li><a href="">Rau củ quả hàng ngày</a></li>
+                            </ul>
+                          </li>
+                          <li class="li_mega_mega-list"><a class="collapse">Nội địa<i class="fa fa-chevron-down"></i></a>
+                            <ul class="collapse-inner">
+                              <li><a href="">Rau củ quả hàng ngày</a></li>
+                            </ul>
+                          </li>
+                          <li class="li_mega_mega-list"><a class="collapse">Nội địa<i class="fa fa-chevron-down"></i></a>
+                            <ul class="collapse-inner">
+                              <li><a href="">Rau củ quả hàng ngày</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="product-promotion.html">Khuyến mãi</a></li>
+                <li><a href="news-list.html">Tin tức</a><i class="fa fa-chevron-down menu-dropdown"></i>
+                  <ul class="dropdown-inner border">
+                    <li class="li-dropdown"><a href="">Tin tức - Sự kiện</a></li>
+                    <li class="li-dropdown"><a href="">Tin tức khuyến mãi</a></li>
+                  </ul>
+                </li>
+                <li><a href="support-client.html">Hỗ trợ</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+                <li><a href="store-product.html">Giỏ hàng<span class="cart">5</span></a></li>
+              </ul>
+              <div class="header_login">
+                <div class="login"><a href="">Đăng nhập</a></div>
+                <ul class="language">
+                  <li><a>VN<span class="fal fa-chevron-down"></span></a>
+                    <ul class="Language-hide">
+                      <li><a href="">EN</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay"></div>
+      </header>
+      <section class="home-banner">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-8 col-lg-8">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="wrapper"><a><img src="./assets/images/s-1/banner.png" alt=""></a></div>
+                    <div class="caption">
+                      <div class="btn-to-buy"><a href="">Mua Ngay<em class="fal fa-angle-right"></em></a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination home-banner-pagination"></div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="figure-media">
+                    <div class="figure-image media-play">
+                      <div class="video_banner"><a data-fancybox="gallery" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"><img src="./assets/images/s-1/banner-2.png" alt=""></a></div>
+                      <div class="caption">
+                        <div class="icon"><img src="./assets/images/s-1/icon.png" alt=""></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="banner_img">
+                    <div class="img"><img src="./assets/images/s-1/banner-3.png" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="block_s-4">
+        <div class="container">
+          <div class="block-title">
+            <div class="head-title">
+              <h1>sản phảm dành cho bạn</h1>
+            </div>
+          </div>
+          <div class="head-menu">
+            <div class="tab-panels">
+              <ul class="tab-navigation-3">
+                <li class="active"><a href="javascript:void(0)" data-type="fruit-people-tab-1">trái cây</a></li>
+                <li><a href="javascript:void(0)" data-type="fruit-people-tab-2">nước ép</a></li>
+                <li><a href="javascript:void(0)" data-type="fruit-people-tab-3">rau củ quả</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-wrapper-3 trinity-item-swiper">
+            <div class="tab-item-3 active" id="fruit-people-tab-1">
+              <div class="row">
+                <div class="col">
+                  <div class="big_product-people">
+                    <div class="card_img">
+                      <div class="img"><img src="./assets/images/s-4/1.png" alt=""></div>
+                      <div class="block_sale">
+                        <div class="gift"><i class="fas fa-gift"></i></div>
+                        <div class="sale"> 
+                          <p>-15%</p>
+                        </div>
+                      </div>
+                    </div><a class="add-to-cart" href="product-detail.html"><em class="material-icons">shopping_basket</em><span>Thêm giỏ hàng</span></a>
+                    <div class="name_product"><a href="">Cam sành loại 1</a></div>
+                    <div class="item-money">
+                      <div class="price">
+                        <p>20.500đ / kg</p>
+                      </div>
+                      <div class="discount">
+                        <p>90.000đ</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="big_product-people">
+                    <div class="card_img">
+                      <div class="img"><img src="./assets/images/s-4/2.png" alt=""></div>
+                      <div class="block_sale">
+                        <div class="gift"><i class="fas fa-gift"></i></div>
+                        <div class="sale"> 
+                          <p>-15%</p>
+                        </div>
+                      </div>
+                    </div><a class="add-to-cart" href="product-detail.html"><em class="material-icons">shopping_basket</em><span>Thêm giỏ hàng</span></a>
+                    <div class="name_product"><a href="">Cam sành loại 1</a></div>
+                    <div class="item-money">
+                      <div class="price">
+                        <p>20.500đ / kg</p>
+                      </div>
+                      <div class="discount">
+                        <p>90.000đ</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="big_product-people">
+                    <div class="card_img">
+                      <div class="img"><img src="./assets/images/s-4/3.png" alt=""></div>
+                      <div class="block_sale">
+                        <div class="gift"><i class="fas fa-gift"></i></div>
+                        <div class="sale"> 
+                          <p>-15%</p>
+                        </div>
+                      </div>
+                    </div><a class="add-to-cart" href="product-detail.html"><em class="material-icons">shopping_basket</em><span>Thêm giỏ hàng</span></a>
+                    <div class="name_product"><a href="">Cam sành loại 1</a></div>
+                    <div class="item-money">
+                      <div class="price">
+                        <p>20.500đ / kg</p>
+                      </div>
+                      <div class="discount">
+                        <p>90.000đ</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="big_product-people">
+                    <div class="card_img">
+                      <div class="img"><img src="./assets/images/s-4/4.png" alt=""></div>
+                      <div class="block_sale">
+                        <div class="gift"><i class="fas fa-gift"></i></div>
+                        <div class="sale"> 
+                          <p>-15%</p>
+                        </div>
+                      </div>
+                    </div><a class="add-to-cart" href="product-detail.html"><em class="material-icons">shopping_basket</em><span>Thêm giỏ hàng</span></a>
+                    <div class="name_product"><a href="">Cam sành loại 1</a></div>
+                    <div class="item-money">
+                      <div class="price">
+                        <p>20.500đ / kg</p>
+                      </div>
+                      <div class="discount">
+                        <p>90.000đ</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="big_product-people">
+                    <div class="card_img">
+                      <div class="img"><img src="./assets/images/s-4/5.png" alt=""></div>
+                      <div class="block_sale">
+                        <div class="gift"><i class="fas fa-gift"></i></div>
+                        <div class="sale"> 
+                          <p>-15%</p>
+                        </div>
+                      </div>
+                    </div><a class="add-to-cart" href="product-detail.html"><em class="material-icons">shopping_basket</em><span>Thêm giỏ hàng</span></a>
+                    <div class="name_product"><a href="">Cam sành loại 1</a></div>
+                    <div class="item-money">
+                      <div class="price">
+                        <p>20.500đ / kg</p>
+                      </div>
+                      <div class="discount">
+                        <p>90.000đ</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="big_product-people">
+                    <div class="card_img">
+                      <div class="img"><img src="./assets/images/s-4/1.png" alt=""></div>
+                      <div class="block_sale">
+                        <div class="gift"><i class="fas fa-gift"></i></div>
+                        <div class="sale"> 
+                          <p>-15%</p>
+                        </div>
+                      </div>
+                    </div><a class="add-to-cart" href="product-detail.html"><em class="material-icons">shopping_basket</em><span>Thêm giỏ hàng</span></a>
+                    <div class="name_product"><a href="">Cam sành loại 1</a></div>
+                    <div class="item-money">
+                      <div class="price">
+                        <p>20.500đ / kg</p>
+                      </div>
+                      <div class="discount">
+                        <p>90.000đ</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="big_product-people">
+                    <div class="card_img">
+                      <div class="img"><img src="./assets/images/s-4/2.png" alt=""></div>
+                      <div class="block_sale">
+                        <div class="gift"><i class="fas fa-gift"></i></div>
+                        <div class="sale"> 
+                          <p>-15%</p>
+                        </div>
+                      </div>
+                    </div><a class="add-to-cart" href="product-detail.html"><em class="material-icons">shopping_basket</em><span>Thêm giỏ hàng</span></a>
+                    <div class="name_product"><a href="">Cam sành loại 1</a></div>
+                    <div class="item-money">
+                      <div class="price">
+                        <p>20.500đ / kg</p>
+                      </div>
+                      <div class="discount">
+                        <p>90.000đ</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="big_product-people">
+                    <div class="card_img">
+                      <div class="img"><img src="./assets/images/s-4/3.png" alt=""></div>
+                      <div class="block_sale">
+                        <div class="gift"><i class="fas fa-gift"></i></div>
+                        <div class="sale"> 
+                          <p>-15%</p>
+                        </div>
+                      </div>
+                    </div><a class="add-to-cart" href="product-detail.html"><em class="material-icons">shopping_basket</em><span>Thêm giỏ hàng</span></a>
+                    <div class="name_product"><a href="">Cam sành loại 1</a></div>
+                    <div class="item-money">
+                      <div class="price">
+                        <p>20.500đ / kg</p>
+                      </div>
+                      <div class="discount">
+                        <p>90.000đ</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="big_product-people">
+                    <div class="card_img">
+                      <div class="img"><img src="./assets/images/s-4/4.png" alt=""></div>
+                      <div class="block_sale">
+                        <div class="gift"><i class="fas fa-gift"></i></div>
+                        <div class="sale"> 
+                          <p>-15%</p>
+                        </div>
+                      </div>
+                    </div><a class="add-to-cart" href="product-detail.html"><em class="material-icons">shopping_basket</em><span>Thêm giỏ hàng</span></a>
+                    <div class="name_product"><a href="">Cam sành loại 1</a></div>
+                    <div class="item-money">
+                      <div class="price">
+                        <p>20.500đ / kg</p>
+                      </div>
+                      <div class="discount">
+                        <p>90.000đ</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="big_product-people">
+                    <div class="card_img">
+                      <div class="img"><img src="./assets/images/s-4/5.png" alt=""></div>
+                      <div class="block_sale">
+                        <div class="gift"><i class="fas fa-gift"></i></div>
+                        <div class="sale"> 
+                          <p>-15%</p>
+                        </div>
+                      </div>
+                    </div><a class="add-to-cart" href="product-detail.html"><em class="material-icons">shopping_basket</em><span>Thêm giỏ hàng</span></a>
+                    <div class="name_product"><a href="">Cam sành loại 1</a></div>
+                    <div class="item-money">
+                      <div class="price">
+                        <p>20.500đ / kg</p>
+                      </div>
+                      <div class="discount">
+                        <p>90.000đ</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="big_product-people">
+                    <div class="card_img">
+                      <div class="img"><img src="./assets/images/s-4/1.png" alt=""></div>
+                      <div class="block_sale">
+                        <div class="gift"><i class="fas fa-gift"></i></div>
+                        <div class="sale"> 
+                          <p>-15%</p>
+                        </div>
+                      </div>
+                    </div><a class="add-to-cart" href="product-detail.html"><em class="material-icons">shopping_basket</em><span>Thêm giỏ hàng</span></a>
+                    <div class="name_product"><a href="">Cam sành loại 1</a></div>
+                    <div class="item-money">
+                      <div class="price">
+                        <p>20.500đ / kg</p>
+                      </div>
+                      <div class="discount">
+                        <p>90.000đ</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="big_product-people">
+                    <div class="card_img">
+                      <div class="img"><img src="./assets/images/s-4/2.png" alt=""></div>
+                      <div class="block_sale">
+                        <div class="gift"><i class="fas fa-gift"></i></div>
+                        <div class="sale"> 
+                          <p>-15%</p>
+                        </div>
+                      </div>
+                    </div><a class="add-to-cart" href="product-detail.html"><em class="material-icons">shopping_basket</em><span>Thêm giỏ hàng</span></a>
+                    <div class="name_product"><a href="">Cam sành loại 1</a></div>
+                    <div class="item-money">
+                      <div class="price">
+                        <p>20.500đ / kg</p>
+                      </div>
+                      <div class="discount">
+                        <p>90.000đ</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="big_product-people">
+                    <div class="card_img">
+                      <div class="img"><img src="./assets/images/s-4/3.png" alt=""></div>
+                      <div class="block_sale">
+                        <div class="gift"><i class="fas fa-gift"></i></div>
+                        <div class="sale"> 
+                          <p>-15%</p>
+                        </div>
+                      </div>
+                    </div><a class="add-to-cart" href="product-detail.html"><em class="material-icons">shopping_basket</em><span>Thêm giỏ hàng</span></a>
+                    <div class="name_product"><a href="">Cam sành loại 1</a></div>
+                    <div class="item-money">
+                      <div class="price">
+                        <p>20.500đ / kg</p>
+                      </div>
+                      <div class="discount">
+                        <p>90.000đ</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="big_product-people">
+                    <div class="card_img">
+                      <div class="img"><img src="./assets/images/s-4/4.png" alt=""></div>
+                      <div class="block_sale">
+                        <div class="gift"><i class="fas fa-gift"></i></div>
+                        <div class="sale"> 
+                          <p>-15%</p>
+                        </div>
+                      </div>
+                    </div><a class="add-to-cart" href="product-detail.html"><em class="material-icons">shopping_basket</em><span>Thêm giỏ hàng</span></a>
+                    <div class="name_product"><a href="">Cam sành loại 1</a></div>
+                    <div class="item-money">
+                      <div class="price">
+                        <p>20.500đ / kg</p>
+                      </div>
+                      <div class="discount">
+                        <p>90.000đ</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="big_product-people">
+                    <div class="card_img">
+                      <div class="img"><img src="./assets/images/s-4/5.png" alt=""></div>
+                      <div class="block_sale">
+                        <div class="gift"><i class="fas fa-gift"></i></div>
+                        <div class="sale"> 
+                          <p>-15%</p>
+                        </div>
+                      </div>
+                    </div><a class="add-to-cart" href="product-detail.html"><em class="material-icons">shopping_basket</em><span>Thêm giỏ hàng</span></a>
+                    <div class="name_product"><a href="">Cam sành loại 1</a></div>
+                    <div class="item-money">
+                      <div class="price">
+                        <p>20.500đ / kg</p>
+                      </div>
+                      <div class="discount">
+                        <p>90.000đ</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="btn-more"><a href="">xem thêm<em class="ri-add-line"></em></a></div>
+            </div>
+          </div>
+          <div class="fruit-people-swiper-wrapper">
+            <div class="nav-arrow-prev"><em class="fal fa-angle-left"></em></div>
+            <div class="nav-arrow-next"><em class="fal fa-angle-right"></em></div>
+            <div class="swiper-container slide-fruit">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card_body"><a href=""><img src="./assets/images/s-4/slide-1.png" alt=""></a></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card_body"><a href=""><img src="./assets/images/s-4/slide-2.png" alt=""></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-3 col-lg-3">
+              <div class="logo-footer">
+                <div class="img"><img src="./assets/images/logo-footer.png" alt=""></div>
+              </div>
+            </div>
+            <div class="col-12 col-md-9 col-lg-9">
+              <div class="desc-footer">
+                <p>Với TL Fruit, chúng tôi mang đến nguồn thực phẩm tốt, sạch, phong phú và nhiều dinh dưỡng, thân thiết với môi trường nhằm chia sẻ những lo lắng của khách hàng khi chọn mua thực phẩm hàng ngày cho gia đình</p>
+              </div>
+              <div class="btn-footer">
+                <div class="btn-more"><a href="">xem thêm<em class="ri-add-line"></em></a></div>
+                <div class="img-footer"><img src="./assets/images/footer-top.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-6 col-md-6 col-lg-2">
+                <div class="icon-footer-bottom">
+                  <div class="icon-footer">
+                    <div class="img"><img src="./assets/images/icon-footer-1.png" alt=""></div>
+                  </div>
+                  <div class="title-footer">
+                    <h4>kuyến mãi giá sỉ</h4>
+                  </div>
+                  <div class="text-footer">
+                    <p>Cung cấp độc quyền sản phẩm tại thị trường Việt Nam</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-6 col-lg-2">
+                <div class="icon-footer-bottom">
+                  <div class="icon-footer">
+                    <div class="img"><img src="./assets/images/icon-footer-2.png" alt=""></div>
+                  </div>
+                  <div class="title-footer">
+                    <h4>Giao hàng miễn phí</h4>
+                  </div>
+                  <div class="text-footer">
+                    <p>Giao hàng miễn phí với hóa đơn trên 1.000.000 đ</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-6 col-lg-2">
+                <div class="icon-footer-bottom">
+                  <div class="icon-footer">
+                    <div class="img"><img src="./assets/images/icon-footer-3.png" alt=""></div>
+                  </div>
+                  <div class="title-footer">
+                    <h4>Thanh toán an toàn</h4>
+                  </div>
+                  <div class="text-footer">
+                    <p>Bằng cách các phương phúc phổ biến và an toàn nhất</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-6 col-lg-2">
+                <div class="icon-footer-bottom">
+                  <div class="icon-footer">
+                    <div class="img"><img src="./assets/images/icon-footer-4.png" alt=""></div>
+                  </div>
+                  <div class="title-footer">
+                    <h4>Tự tin mua sắm</h4>
+                  </div>
+                  <div class="text-footer">
+                    <p>Bảo vệ người mua hàng từ lúc nhấp chuột đến nhận hàng</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-6 col-lg-2">
+                <div class="icon-footer-bottom">
+                  <div class="icon-footer">
+                    <div class="img"><img src="./assets/images/icon-footer-5.png" alt=""></div>
+                  </div>
+                  <div class="title-footer">
+                    <h4>Trợ giúp 24/7</h4>
+                  </div>
+                  <div class="text-footer">
+                    <p>Chúng tôi hỗ trợ 24/7 cho trải nghiệm mua sắm của bạn thật nhẹ nhàng</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-6 col-lg-2">
+                <div class="icon-footer-bottom">
+                  <div class="icon-footer">
+                    <div class="img"><img src="./assets/images/icon-footer-6.png" alt=""></div>
+                  </div>
+                  <div class="title-footer">
+                    <h4>sản phẩm chất lượng</h4>
+                  </div>
+                  <div class="text-footer">
+                    <p>Tất cả sản phẩm đều có bảo hành và khách có thể đổi trả ở các cửa hàng</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-block">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-3 col-md-6 col-sm-6 col-12 footer-card pr-40">
+                <div class="card__title">
+                  <h4>công ty cptm xuất nhật khẩu trái cây TL</h4>
+                </div>
+                <div class="card__body">
+                  <ul>
+                    <li><span><i class="ri-map-pin-line"></i></span>
+                      <p>Địa chỉ: Tầng 4A, Vincom Center, 72 Lê Thánh Tôn, phường Bến Nghé, Quận 1, Thành phố Hồ Chí Minh</p>
+                    </li>
+                    <li><span><i class="ri-printer-line"></i></span>
+                      <p>Điện thoại: 0123456789</p>
+                    </li>
+                    <li><span><i class="ri-phone-line"></i></span>
+                      <p>Fax: 027456789</p>
+                    </li>
+                    <li><span><i class="ri-phone-line"></i></span>
+                      <p>Email: contact@tanlocfruit.com</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-6 col-sm-6 col-12 footer-card">
+                <div class="card__title">
+                  <h4>chính sách công ty</h4>
+                </div>
+                <div class="card__body">
+                  <ul>
+                    <li><a href="">Điều khoản sử dụng</a></li>
+                    <li><a href="">Giao hàng</a></li>
+                    <li><a href="">chính sách bảo mật</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-6 col-sm-6 col-12 footer-card">
+                <div class="card__title">
+                  <h4>hỗ trợ khách hàng</h4>
+                </div>
+                <div class="card__body">
+                  <ul>
+                    <li><a href="">Hướng dẫn đặt hàng</a></li>
+                    <li><a href="">FAQs</a></li>
+                    <li><a href="">Thanh toán online</a></li>
+                    <li><a href="">
+                        <div class="img-foot"><img src="./assets/images/dadangky.png" alt=""></div></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-6 col-sm-6 col-12 footer-card">
+                <div class="card__title">
+                  <h4>Kết nối tấn lộc fruit</h4>
+                </div>
+                <div class="subsrcibe">
+                  <div class="subscribefrm">
+                    <input type="text" placeholder="Nhập địa chỉ email"><em class="ri-arrow-right-fill"></em>
+                  </div>
+                </div>
+                <div class="bottom-wrapper-news-detail">
+                  <div class="social-network-share">
+                    <div class="icon"><a href="#"><em class="fab fa-facebook-f"></em></a><a href="#"><em class="fab fa-youtube"></em></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+            <div class="policy-link">
+              <ul>
+                <li><a href="#">Điều khoản sử dụng</a></li>
+                <li><a href="#">Chính sách bảo mật</a></li>
+                <li><a href="#">Sitemap</a></li>
+              </ul>
+            </div>
+            <div class="copyright">
+              <p>Copyright © 2024 TL Fruit</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Scripts-->
+    <script src="./assets/js/scripts.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  </body>
+</html>
